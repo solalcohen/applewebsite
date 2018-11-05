@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://use.fontawesome.com/092c94a1fb.js"></script>
+  <title>Assignment</title>
+  <style>
+    .stripe {
+      border: 5px solid white;
+      text-align: center;
+      height: 60px;
+
+    }
+
+    .menu {
+      height: 48px;
+      background-color: black;
+      font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      color: #fff;
+      text-align: center;
+      position:fixed;
+    }
+
+    .IphoneXS.stripe {
+      border: 0px;
+      height: 200px;
+      background: #000;
+      padding: 210px 140px 173px 160px;
+      position: relative;
+    }
+
+    .IphoneXR.stripe {
+      border: 0px;
+      border-block-start: 9px solid white;
+      height: 200px;
+      background: #000;
+      padding: 210px 140px 157px 160px;
+      position: relative;
+
+
+    }
+
+    .Watch.stripe {
+      overflow: hidden;
+      height: 200px;
+      background-color: #fafafa;
+      padding: 210px 140px 157px 160px;
+      position: relative;
+
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container div {
+      height: 490px;
+      width: 100%;
+    }
+
+    .container2 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container2 div {
+      height: 490px;
+      width: 100%;
+    }
+
+    .container3 {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container3 div {
+      height: 490px;
+      width: 100%;
+    }
+
+    .Music.stripe {
+      height: 490px;
+      background-image: url('./images/apple_music_large.jpg');
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+
+    }
+
+    .Airpods.stripe {
+      height: 490px;
+      background-color: #fafafa;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+
+    }
+
+    .GiveBack.stripe {
+      height: 490px;
+      background-image: url('./images/give_back_large.jpg');
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+
+    }
+
+    .Homepod.stripe {
+      height: 490px;
+      background-color: #fafafa;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+
+    }
+
+    .MacbookPro.stripe {
+      height: 490px;
+      background-image: url('./images/macbook_pro.jpg');
+      background-size: 1220px 590px;
+      background-position: center;
+      overflow: hidden;
+
+    }
+
+    .Ipad.stripe {
+      height: 490px;
+      background-color: #fafafa;
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+
+    }
+
+    .liste.stripe {
+      height: 470px;
+      background-color: #f2f2f2;
+      overflow: hidden;
+      border-block-end: 0px;
+
+    }
+
+    .liste.stripe div pre {
+      color: #555;
+      font-size: 11px;
+      margin: 3px -8px 3px 234px;
+
+    }
+.liste.stripe div a:hover{
+  text-decoration: underline
+}
+
+
+
+    .liste.stripe p {
+      font-size: 11px;
+      color: #888;
+      margin: 20px 70px -13px -650px;
+
+    }
+
+    .menu .menu-entry {
+      margin: 30px;
+    }
+
+    .menu-entry a {
+      text-decoration: none;
+      color: #fff;
+
+    }
+    .menu-entry a:hover{
+      color: #555;
+    }
+
+    .menu .menu-entry img.logo {
+      height: 50px;
+      vertical-align: middle;
+    }
+
+    .police a {
+      text-decoration: none;
+      color: deepskyblue;
+      font-size: 17px;
+    }
+
+    .police a:hover{
+      text-decoration: underline;
+    }
+
+    hr {
+      border: none;
+      height: 1px;
+      background-color: lightgray;
+      margin: 32px 141px;
+    }
+
+    .police {
+      position: absolute;
+      top: 55px;
+      left: 500px;
+      color: #fff;
+      font-size: 25px;
+      font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+
+    }
+
+    .police2 {
+      position: absolute;
+      margin: 0px 50px;
+      color: black;
+      font-size: 25px;
+      font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    }
+
+    .police2 img {
+      width: 210px;
+    }
+
+    .police3 {
+      margin: -260px -20px;
+      position: absolute;
+      height: 620px;
+      width: 340px;
+
+    }
+
+    .police2 a {
+      text-decoration: none;
+      color: deepskyblue;
+      font-size: 17px;
+    }
+
+    .police2 a:hover {
+      text-decoration: underline;
+    }
+
+    .police4 {
+      position: absolute;
+      margin: 50px -310px;
+      color: white;
+      font-size: 20px;
+      font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+    }
+
+    .police4 a {
+      text-decoration: none;
+      color: white;
+      font-size: 15px;
+
+    }
+
+    .police4 a:hover {
+      text-decoration: underline;
+    }
+
+    .police4 pre {
+      margin: -20px;
+    }
+
+    .police4 img {
+      margin: -20px -60px;
+      position: absolute;
+      height: 30px;
+      width: 110px;
+
+    }
+
+    .police5 {
+      margin: 410px -10px;
+      position: absolute;
+      height: 30px;
+      width: 30px;
+    }
+
+    .police6 {
+      position: absolute;
+      margin: 15px -290px;
+      color: black;
+      font-size: 20px;
+      font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    }
+
+    .police6 pre {
+      margin: -20px;
+    }
+
+    .police6 a {
+      text-decoration: none;
+      color: deepskyblue;
+      font-size: 15px;
+
+    }
+
+    .police6 a:hover {
+      text-decoration: underline;
+    }
+
+    .police6 b {
+
+      font-size: 30px;
+
+    }
+
+    .police7 {
+      margin: 160px -200px;
+      position: absolute;
+      height: 330px;
+      width: 420px;
+    }
+
+    .police8 {
+      margin: 160px -130px;
+      position: absolute;
+      height: 290px;
+      width: 311px;
+
+    }
+
+    .police9 {
+      position: absolute;
+      margin: 15px -310px;
+      color: white;
+      font-size: 20px;
+      font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    }
+
+    .police9 pre {
+      margin: -20px;
+    }
+
+    .police9 a {
+      text-decoration: none;
+      color: deepskyblue;
+      font-size: 15px;
+    }
+
+    .police9 a:hover {
+      text-decoration: underline;
+    }
+
+    .police9 b {
+
+      font-size: 30px;
+    }
+
+    .police10 {
+      margin: 210px -200px;
+      position: absolute;
+      height: 270px;
+      width: 420px;
+    }
+
+    .police11 {
+      font-size: 11px;
+      color: #555;
+      border-spacing: 93px 10px;
+      margin: -24px 50px;
+      text-align: left;
+      font-family: "SF Pro Text", "Myriad Set Pro", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+    }
+
+    .police11 a {
+      text-decoration: none;
+      color: #555;
+    }
+
+    .police11 a:hover {
+      text-decoration: underline;
+    }
+
+    .police12 {
+      font-size: 11px;
+      color: #888;
+      margin: 20px 70px -13px -650px;
+
+    }
+
+    .police13 a {
+      text-decoration: none;
+      color: #555;
+      font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+    }
+
+    .police13 img {
+      margin: 0px 0px 0px 173px;
+    }
+  </style>
+</head>
+
+<body style="margin:0px;color: #fff">
+  <div class="menu">
+    <span class="menu-entry">
+      <a href="www.apple.com"> <img class="logo" src="./images/apple_logo.svg" alt="logo"></a>
+    </span>
+    <span class="menu-entry"><a href="https://www.apple.com/mac/">Mac</a></span>
+    <span class="menu-entry"><a href="https://www.apple.com/ipad/">Ipad</a></span>
+    <span class="menu-entry"><a href="https://www.apple.com/iphone/">Iphone</a></span>
+    <span class="menu-entry"><a href="https://www.apple.com/music/">Watch</a></span>
+    <span class="menu-entry"><a href="https://www.apple.com/tv/">TV</a></span>
+    <span class="menu-entry"><a href="https://www.apple.com/music/">Music</a></span>
+    <span class="menu-entry"><a href="https://support.apple.com/">Support</a></span>
+    <span class="menu-entry">
+      <a href="https://www.apple.com/us/search"> <img class="logo" src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/search/image_large.svg" alt="logo2"></a>
+    </span>
+    <span class="menu-entry">
+      <a href="https://www.apple.com/us/shop/goto/bag"> <img class="logo" src="https://www.apple.com/ac/globalnav/4/en_US/images/globalnav/bag/image_large.svg" alt="logo2"></a>
+    </span>
+  </div>
+  <div class="IphoneXS stripe">
+  <div class="police">
+      <img src="./images/iphone_xs_logo_hero_large.png" alt="">
+      <p>Welcome to the big screens.</p>
+      <span>
+        <pre><a href="https://www.apple.com/iphone-xs/">Learn more></a>   <a href="https://www.apple.com/us/shop/goto/buy_iphone/iphone_xs">Buy></a></span></pre>
+    </div>
+    <img src="./images/iphone_xs_large.jpg" alt="">
+  </div>
+  <div class="IphoneXR stripe">
+    <div class="police">
+      <img src="./images/iphone_xr_logo_hero_large.png" alt="">
+      <p>Brillant. In every way.</p>
+      <span>
+        <pre><a style="color: lightgray" href="#">pre-order 10.19</a></span></pre>
+    </div>
+    <img src="./images/iphone_xr_large.jpg" alt="">
+  </div>
+  <div class="Watch stripe">
+    <div class="police2">
+      <img src="./images/apple_watch_series_4_logo_hero_large.jpg" alt="">
+      <p>All new. For a better you.</p>
+      <span>
+        <pre><a href="https://www.apple.com/apple-watch-series-4/">Learn more></a>   <a href="https://www.apple.com/us/shop/goto/apple_watch">Buy></a></span></pre>
+    </div>
+    <img class="police3" src="./images/apple_watch_series_4_large.jpg" alt="">
+  </div>
+  <div class="container">
+    <div class="Music stripe">
+      <div class="police4">
+        <img src="./images/music_large.png" alt="">
+        <p>Lose yourself in 50 millions songs.</p>
+        <span>
+          <pre><a href="https://itunes.apple.com/subscribe?app=music&itscg=10000&itsct=ret_sub_hp&at=1000l4QJ&ct=ret_sub_hp">Try it free* ↗</a>   <a href="https://www.apple.com/apple-music/">Learn more></a></span></pre>
+      </div>
+      <img class="police5" src="./images/icon_apple_music_large.png" alt="">
+    </div>
+    <div class="Airpods stripe">
+      <div class="police6">
+        <p><b>Airpods</b></p>
+        <p>Wireless. Effortless. Magical</p>
+        <span>
+          <pre><a href="https://www.apple.com/airpods/">Learn more ></a>   <a href="https://www.apple.com/us/shop/goto/product/MMEF2">Buy ></a></span></pre>
+      </div>
+      <img class="police7" src="./images/airpods_large.jpg" alt="">
+    </div>
+  </div>
+  <div class="container2">
+    <div class="GiveBack stripe">
+      <div class="police6">
+        <p><b>Apple Giveback</b></p>
+        <p>Trade in your hold devise <br> for credit toward a new one.</p>
+        <span>
+          <pre><a href="https://www.apple.com/give-back/">See how it works ></a></span></pre>
+      </div>
+    </div>
+    <div class="Homepod stripe">
+      <div class="police6">
+        <p><b>Homepod</b></p>
+        <p>The new sound of home.</p>
+        <span>
+          <pre><a href="https://www.apple.com/homepod/">Learn more ></a>   <a href="https://www.apple.com/shop/buy-homepod/homepod">Buy ></a></span></pre>
+      </div>
+      <img class="police8" src="./images/homepod_large.jpg" alt="">
+    </div>
+  </div>
+  <div class="container3">
+    <div class="MacbookPro stripe">
+      <div class="police9">
+        <p><b>MacBook Pro</b></p>
+        <p>More power. More performance. More pro.</p>
+        <span>
+          <pre><a href="https://www.apple.com/macbook-pro/">Learn more ></a>   <a href="https://www.apple.com/us/shop/goto/macbook_pro/select">Buy > </a></span></pre>
+      </div>
+    </div>
+    <div class="Ipad stripe">
+      <div class="police6">
+        <p><b>Ipad</b></p>
+        <p>Like a computer. Unlike any computer.</p>
+        <span>
+          <pre><a href="https://www.apple.com/ipad-9.7/">Learn more ></a>   <a href="https://www.apple.com/us/shop/goto/buy_ipad/ipad_9_7">Buy ></a></span></pre>
+      </div>
+      <img class="police10" src="./images/ipad_large.jpg" alt="">
+    </div>
+  </div>
+  <div class="liste stripe">
+    <p>* New subscribers only. Plan automatically renews after trial</p>
+    <hr />
+    <table class="police11">
+      <tr>
+        <td><b> Shop and learn</b></td>
+        <td><b> Apple Store</b></td>
+        <td><b>For Education</b></td>
+        <td><b>Account</b></td>
+        <td><b>About Apple</b></td>
+      <tr>
+        <td><a style="text-decoration: none;" href="https://www.apple.com/mac/">Mac</a></td>
+        <td><a href="https://www.apple.com/retail/">Find a Store</a></td>
+        <td><a href="https://www.apple.com/education/">Apple and Education</a></td>
+        <td><a href="https://appleid.apple.com/us/">Manage Your Apple ID</a></td>
+        <td><a href="https://www.apple.com/newsroom/">Newsroom</a></td>
+      <tr>
+        <td><a href="https://www.apple.com/ipad/">iPad</a></td>
+        <td><a href="https://www.apple.com/retail/geniusbar/">Genius Bar</a></td>
+        <td><a href="https://www.apple.com/us/shop/goto/educationrouting">Shop for College</a></td>
+        <td><a href="https://www.apple.com/us/shop/goto/account">Apple Store Account</a></td>
+        <td><a href="https://www.apple.com/leadership/">Apple Leadership</a></td>
+      <tr>
+        <td><a href="https://www.apple.com/iphone/">iPhone</a></td>
+        <td><a href="https://www.apple.com/today/">Today at Apple</a></td>
+        <td></td>
+        <td><a href="https://www.icloud.com/">iCloud.com</a></td>
+        <td><a href="https://www.apple.com/jobs/us/">Job Opportunities</a></td>
+
+      <tr>
+        <td><a href="https://www.apple.com/watch/">Watch</a></td>
+        <td><a href="https://www.apple.com/today/camp/">Apple Camp</a></td>
+        <td><b><a href=""> For business</a></b></td>
+        <td></td>
+        <td><a href="http://investor.apple.com/">Investors</a></td>
+      <tr>
+        <td><a href="https://www.apple.com/tv/">TV</a></td>
+        <td><a href="https://www.apple.com/retail/fieldtrip/">Field Trip</a></td>
+        <td><a href="https://www.apple.com/business/">Apple and Business</a></td>
+        <td><b><a href="">Apple Values</a></b></td>
+        <td><a href="https://www.apple.com/apple-events/">Event</a></td>
+      <tr>
+        <td><a href="https://www.apple.com/music/">Music</a></td>
+        <td><a href="https://itunes.apple.com/app/apple-store/id375380948?pt=2003&ct=footer&mt=8">Apple Store App</a></td>
+        <td><a href="https://www.apple.com/retail/business/">Shop for Business</a></td>
+        <td><a href="https://www.apple.com/accessibility/">Accessibility</a></td>
+        <td><a href="https://www.apple.com/contact/">Contact Apple</a></td>
+      <tr>
+        <td><a href="https://www.apple.com/itunes/">iTunes</a></td>
+        <td><a href="https://www.apple.com/us/shop/goto/special_deals">Refurbished and Clearance</a></td>
+        <td></td>
+        <td><a href="https://www.apple.com/education/connectED/">Education</a></td>
+        <td></td>
+      <tr>
+        <td><a href="https://www.apple.com/homepod/">HomePod</a></td>
+        <td><a href="https://www.apple.com/us/shop/goto/payment_plan">Financing</a></td>
+        <td></td>
+        <td><a href="https://www.apple.com/environment/">Environnement</a></td>
+        <td></td>
+      <tr>
+        <td><a href="https://www.apple.com/ipod-touch/">iPod touch</a></td>
+        <td><a href="https://www.apple.com/us/shop/goto/trade_in">Apple GiveBack</a></td>
+        <td></td>
+        <td><a href="https://www.apple.com/diversity/">Inclusion and Diversity</a></td>
+        <td></td>
+      <tr>
+        <td><a href="https://www.apple.com/us/shop/goto/buy_accessories">Accessories</a></td>
+        <td><a href="https://www.apple.com/us/shop/goto/account">Order Statues</a></td>
+        <td></td>
+        <td><a href="https://www.apple.com/privacy/">Privacy</a></td>
+        <td></td>
+      <tr>
+        <td><a href="https://www.apple.com/us/shop/goto/giftcards">Gift Cards</a></td>
+        <td><a href="https://www.apple.com/us/shop/goto/help">Shopping Helps</a></td>
+        <td></td>
+        <td><a href="https://www.apple.com/supplier-responsibility/">Supplier Responsability</a></td>
+        <td></td>
+    </table>
+    <br />
+    <div>
+      <p style="margin:31px -84px -22px -700px">More ways to shop: Visit an <a style="text-decoration: none;color: darkblue" href="https://www.apple.com/retail/">Apple Store</a>, call 1-800-MY-APPLE, or
+        <a style="text-decoration: none;color: darkblue" href="https://locate.apple.com/"> find a reseller</a>.</p>
+      <hr />
+      <div class="police13">
+        <p style="margin:-21px 63px -22px -700px">Copyright © 2018 Apple Inc. All rights reserved.
+          <pre><a href="https://www.apple.com/privacy/privacy-policy/">Privacy Policy         </a><a href="https://www.apple.com/legal/internet-services/terms/site.html">Terms of use         </a><a href="https://www.apple.com/us/shop/goto/help/sales_refunds">Sales and Refunds         </a><a href="https://www.apple.com/legal/">Legal         </a><a href="https://www.apple.com/sitemap/">Site Map                      </a> <img src="./images/16.png" alt=""><a href=""> United States</a></pre>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
